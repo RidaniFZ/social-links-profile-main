@@ -1,0 +1,67 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: hsl(0, 0%, 8%);
+  margin: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.profile-card {
+  background-color: hsl(0, 0%, 12%);
+  padding: 40px 15px 25px;
+  border: nones;
+  border-radius: 7px;
+  text-align: center;
+  width: 20%;
+}
+.profile-pic {
+  width: 60px;
+  height: 60px;
+  clip-path: circle(50%);
+}
+.name {
+  font-size: 16px;
+  font-weight: 150;
+  color: hsl(0, 0%, 100%);
+}
+.place {
+  font-size: 12px;
+  color: hsl(75, 94%, 57%);
+}
+.function {
+  font-size: 11px;
+  color: hsl(0, 0%, 100%);
+}
+.btns {
+  display: flex;
+  flex-direction: column; /* Stacks buttons vertically */
+  align-items: center;
+}
+.btn {
+  width: 80%; /* Adjust the width (change as needed) */
+  padding: 10px 15px;
+  margin: 5px 0; /* Adds vertical spacing between buttons */
+  text-align: center; /* Centers text inside the button */
+  border-radius: 5px; /* Smooth rounded corners */
+  border: none;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 20%);
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: black;
+  cursor: pointer;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
