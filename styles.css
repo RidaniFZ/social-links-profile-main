@@ -9,31 +9,41 @@ body {
   align-items: center;
   height: 90vh;
 }
+
 .profile-card {
   background-color: hsl(0, 0%, 12%);
-  padding: 40px 15px 25px;
-  border: nones;
+  padding: 40px 10px 25px;
+  border: none;
   border-radius: 7px;
   text-align: center;
-  width: 20%;
+  width: 90%; /* Full width on small screens */
+  max-width: 350px; /* Restrict max width for larger screens */
 }
 .profile-pic {
-  width: 60px;
-  height: 60px;
+  width: 30%; /* Adjust dynamically */
+  max-width: 80px; /* Prevent it from getting too large */
+  height: auto; /* Keep aspect ratio */
   clip-path: circle(50%);
 }
 .name {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 150;
   color: hsl(0, 0%, 100%);
+  margin-bottom: 0; /* Supprime les marges par défaut */
+  padding-bottom: 0; /* Supprime tout padding éventuel */
+  margin-bottom: 4px;
 }
 .place {
-  font-size: 12px;
+  font-size: 11px;
   color: hsl(75, 94%, 57%);
+  margin-top: 0; /* Supprime les marges par défaut */
+  padding-top: 0; /* Supprime tout padding éventuel */
+  margin-top: 4px;
 }
 .function {
   font-size: 11px;
   color: hsl(0, 0%, 100%);
+  margin-top: 5px;
 }
 .btns {
   display: flex;
@@ -41,7 +51,8 @@ body {
   align-items: center;
 }
 .btn {
-  width: 80%; /* Adjust the width (change as needed) */
+  width: 100%;
+  max-width: 300px; /* Prevent buttons from getting too wide */
   padding: 10px 15px;
   margin: 5px 0; /* Adds vertical spacing between buttons */
   text-align: center; /* Centers text inside the button */
@@ -61,7 +72,22 @@ body {
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: white;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color:hsl(75, 94%, 57%);
+}
+@media (max-width: 480px) {
+  .container {
+    height: auto; /* Allow content to take full height */
+    padding: 20px;
+  }
+
+  .profile-card {
+    padding: 30px 10px 20px;
+  }
+
+  .btn {
+    font-size: 14px; /* Adjust button text size */
+  }
 }
